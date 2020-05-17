@@ -11,8 +11,6 @@ import com.xebia.entity.Article;
 import com.xebia.exception.ArticleException;
 import com.xebia.repository.ArticleRepository;
 
-import jdk.internal.org.jline.utils.Log;
-
 @Service
 public class ArticleService {
 	
