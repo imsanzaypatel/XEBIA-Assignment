@@ -6,7 +6,7 @@ I have created this project for learning purpose. i have added many types of tec
   + Exception Handling  | [Exception Handling Referance Document](https://howtodoinjava.com/spring-boot2/spring-rest-request-validation/)
   
   
-  ![Exception Handling](blob/master/src/main/resources/templates/images/toptal-blog-image-1503383127121-5b3fb3dc0a77cc9f960bf97609b2fa20.png)
+  ![Exception Handling](src/main/resources/templates/images/toptal-blog-image-1503383127121-5b3fb3dc0a77cc9f960bf97609b2fa20.png)
   
  
   
