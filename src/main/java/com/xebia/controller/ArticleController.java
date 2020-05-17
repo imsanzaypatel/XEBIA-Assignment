@@ -2,6 +2,8 @@ package com.xebia.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,7 +31,11 @@ import io.swagger.annotations.ApiResponses;
 @RestController
 @RequestMapping("/api/articles")
 @Api(value="createArticle API", description=" This  ArticleController contains all the operation about Article")
+
 public class ArticleController {
+	
+	
+	Logger log = LoggerFactory.getLogger(ArticleController.class);
 
 	@Autowired
 	private ArticleService articleService;
@@ -47,7 +53,7 @@ public class ArticleController {
 		
 		template.send(topicName,article);
 		
-		System.err.println("Request is send to kafka with Article Json "+article);
+		log.info("Request is send to kafka with Article Json {{}} ",article);
 		
 		return new ResponseEntity<Article>(articleService.createArticle(article), HttpStatus.CREATED);
 	}
